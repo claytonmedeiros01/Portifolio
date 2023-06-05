@@ -1,52 +1,63 @@
-
+/* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+/* Cabeçalho */
 header {
-    background-color: #333;
-    color: #ffffffc3;
-    padding: 20px;
-    text-align: center;
-}
-section {
-    padding: 10px;
-}
-footer {
-    background-color: #333;
-    color: #ffffff84;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: #ffffffc3;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Habilitar posicionamento relativo */
 }
 
-.container {
-    position: relative;
-    position: absolute;
-    top: 0;
-    left: 380px;
-    margin: 0;
-    padding: 10px;
-  }
+/* Ícones sociais */
 .social-icons {
-    position: relative;
-    position: absolute;
-    top: 1;
-    right: -800px;
-    margin: 0;
-    padding: 10px;
+  position: absolute; /* Habilitar posicionamento absoluto */
+  top: 20px; /* Espaçamento superior */
+  right: 20px; /* Espaçamento direito */
+}
 
-  }
-  .im{
-    position: relative;
-  }
-  
-  .im img {
-    position: absolute;
-    top: -140px; /* Distância do topo */
-    left: 300px; /* Distância da esquerda */
-    width: 150px; /* Largura desejada */
-  height: auto; /* Altura automática (mantém a proporção original) */
-  }
+/* Imagem */
+.foto img {
+  position: absolute; /* Habilitar posicionamento absoluto */
+  top: 0; /* Alinhar no topo */
+  left: 10; /* Alinhar à esquerda */
+  margin: 0; /* Margem zero */
+  padding: 1px; /* Padding de 1px */
+  width: 150px; /* Diminuir o tamanho da imagem para 50px */
+}
 
- 
+
+.foto {
+  transition: transform 0.3s ease-in-out;
+}
+
+.foto:hover {
+  transform: scale(1.2);
+}
+.section1{
+  text-align: center;
+}
+.certificados-container {
+  display: flex;
+  justify-content: center;
+}
+
+.certificados-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.certificados-lista li {
+  display: inline-block;
+  margin: 10px;
+}
+footer{
+  text-align: center;
+}

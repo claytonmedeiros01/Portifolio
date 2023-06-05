@@ -20,6 +20,26 @@ emailIcon.addEventListener('click', function() {
   setTimeout(function() {
     copyMessage.textContent = 'Copiar';
   }, 2000); // Tempo em milissegundos para exibir a mensagem
+
+
+
+
+
+  $(document).ready(function() {
+    $('.foto').hover(
+      function() {
+        $(this).css('z-index', '1');
+      },
+      function() {
+        $(this).css('z-index', '0');
+      }
+    );
+  });
+  
+
+
 });
+
+
 </script>
 
